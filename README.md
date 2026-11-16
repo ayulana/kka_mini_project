@@ -1,11 +1,10 @@
 # Penyusun Jadwal Kuliah dengan CSP dan AI Ranking
 
-Proyek kelompok mata kuliah Kecerdasan Buatan (KKA). Program ini menyusun jadwal kuliah satu kampus,
-lalu membantu mahasiswa menyusun jadwal pribadinya tanpa bentrok.
+Program ini menyusun jadwal kuliah satu kampus, lalu membantu mahasiswa menyusun jadwal pribadinya tanpa bentrok.
 
-## Cara kerjanya
+## Cara kerja
 
-Ada tiga tahap. Hasil tahap sebelumnya jadi bahan tahap berikutnya.
+Ada tiga tahap. Hasil tahap sebelumnya menjadi bahan tahap berikutnya.
 
 **Tahap 1: Menyusun jadwal kampus (CSP)**
 
@@ -86,25 +85,3 @@ Tombol "Generate ulang jadwal CSP" membuat jadwal tetap yang baru.
 Semua data kampus ada di bagian atas `kampus.py`: daftar `MATKUL`, `DOSEN`, `RUANGAN`, jam kuliah,
 dan `KELAS_PER_MATKUL`. Ubah di sana, lalu jalankan ulang. Batas 3 pilihan mahasiswa
 ada di `MAKS_PILIHAN` pada `app.py`.
-
-## Deploy ke web (Streamlit Community Cloud)
-
-1. Taruh semua file di **root** repo GitHub, bukan di dalam subfolder.
-2. Buka share.streamlit.io, masuk dengan akun GitHub, lalu klik **New app**.
-3. Pilih repo, branch `main`, main file `app.py`, lalu **Deploy**.
-4. Tunggu build beberapa menit. Link publiknya bisa dimasukkan ke PPT.
-
-Aplikasi gratis bisa "tidur" kalau lama tidak dibuka, jadi buka linknya sebelum presentasi
-dan siapkan screenshot cadangan. Jangan jalankan `compare.py` lewat web karena butuh sekitar 1 menit.
-
-## Aturan kerja bersama
-
-- Satu orang satu file. Jangan ubah nama atau bentuk fungsi yang dipakai modul lain.
-- Fungsi yang dipakai antarmodul:
-  - `load_problem(path=None) -> Problem`
-  - `build_domain(section, problem) -> list[Assignment]`
-  - `is_consistent(section_id, assignment, partial, problem) -> bool`
-  - `solve_with_stats(problem, use_mrv, use_fc, rng, max_nodes) -> (Schedule | None, stats)`
-  - `jalankan_skenario(schedule, seed_a, seed_b, max_pick, kuota, problem) -> (game, hasil)`
-- `Schedule` adalah dict `{section_id: Assignment(lecturer_id, room_id, slot_id)}`.
-- Sebelum push, jalankan `python tests_scenarios.py` dan pastikan semuanya OK.
