@@ -1,0 +1,267 @@
+{
+  "slots": [
+    {
+      "id": "Sen-08",
+      "day": "Sen",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Sen-10",
+      "day": "Sen",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Sel-08",
+      "day": "Sel",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Sel-10",
+      "day": "Sel",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Rab-08",
+      "day": "Rab",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Rab-10",
+      "day": "Rab",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Kam-08",
+      "day": "Kam",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Kam-10",
+      "day": "Kam",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Jum-08",
+      "day": "Jum",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Jum-10",
+      "day": "Jum",
+      "start": 10,
+      "end": 12
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R1",
+      "name": "Ruang 1",
+      "capacity": 30
+    },
+    {
+      "id": "R2",
+      "name": "Ruang 2",
+      "capacity": 40
+    },
+    {
+      "id": "R3",
+      "name": "Ruang 3",
+      "capacity": 50
+    },
+    {
+      "id": "R4",
+      "name": "Ruang 4",
+      "capacity": 70
+    }
+  ],
+  "lecturers": [
+    {
+      "id": "D1",
+      "name": "Andi",
+      "max_load": 3,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Rab-10",
+        "Kam-10",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Kam-10",
+        "Jum-08"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Sari",
+      "max_load": 2,
+      "available_slots": [
+        "Sen-08",
+        "Sel-08",
+        "Sel-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Kam-08",
+        "Jum-08"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Budi",
+      "max_load": 3,
+      "available_slots": [
+        "Sen-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Kam-08",
+        "Kam-10"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Citra",
+      "max_load": 2,
+      "available_slots": [
+        "Sen-08",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Kam-08",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Sen-08",
+        "Sel-08"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "Dedi",
+      "max_load": 3,
+      "available_slots": [
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-10",
+        "Kam-10",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Rab-10",
+        "Kam-10"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "S1",
+      "course": "Basis Data A",
+      "sks": 2,
+      "size": 31,
+      "eligible_lecturers": [
+        "D4",
+        "D5"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S2",
+      "course": "Algoritma A",
+      "sks": 3,
+      "size": 25,
+      "eligible_lecturers": [
+        "D2"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S3",
+      "course": "Jaringan Komputer A",
+      "sks": 3,
+      "size": 38,
+      "eligible_lecturers": [
+        "D2",
+        "D5"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S4",
+      "course": "Kecerdasan Buatan A",
+      "sks": 3,
+      "size": 20,
+      "eligible_lecturers": [
+        "D1",
+        "D3",
+        "D5"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S5",
+      "course": "Pemrograman Web A",
+      "sks": 3,
+      "size": 26,
+      "eligible_lecturers": [
+        "D1"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S6",
+      "course": "Teori Graf A",
+      "sks": 3,
+      "size": 29,
+      "eligible_lecturers": [
+        "D1",
+        "D4"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S7",
+      "course": "Sistem Operasi A",
+      "sks": 3,
+      "size": 52,
+      "eligible_lecturers": [
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S8",
+      "course": "Struktur Data A",
+      "sks": 2,
+      "size": 46,
+      "eligible_lecturers": [
+        "D1",
+        "D3",
+        "D4"
+      ],
+      "group": "G2"
+    }
+  ]
+}

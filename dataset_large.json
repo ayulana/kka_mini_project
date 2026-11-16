@@ -1,0 +1,999 @@
+{
+  "slots": [
+    {
+      "id": "Sen-08",
+      "day": "Sen",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Sen-10",
+      "day": "Sen",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Sel-08",
+      "day": "Sel",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Sel-10",
+      "day": "Sel",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Rab-08",
+      "day": "Rab",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Rab-10",
+      "day": "Rab",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Kam-08",
+      "day": "Kam",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Kam-10",
+      "day": "Kam",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "id": "Jum-08",
+      "day": "Jum",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "id": "Jum-10",
+      "day": "Jum",
+      "start": 10,
+      "end": 12
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R1",
+      "name": "Ruang 1",
+      "capacity": 30
+    },
+    {
+      "id": "R2",
+      "name": "Ruang 2",
+      "capacity": 40
+    },
+    {
+      "id": "R3",
+      "name": "Ruang 3",
+      "capacity": 50
+    },
+    {
+      "id": "R4",
+      "name": "Ruang 4",
+      "capacity": 70
+    },
+    {
+      "id": "R5",
+      "name": "Ruang 5",
+      "capacity": 30
+    },
+    {
+      "id": "R6",
+      "name": "Ruang 6",
+      "capacity": 40
+    },
+    {
+      "id": "R7",
+      "name": "Ruang 7",
+      "capacity": 50
+    },
+    {
+      "id": "R8",
+      "name": "Ruang 8",
+      "capacity": 70
+    },
+    {
+      "id": "R9",
+      "name": "Ruang 9",
+      "capacity": 30
+    },
+    {
+      "id": "R10",
+      "name": "Ruang 10",
+      "capacity": 40
+    }
+  ],
+  "lecturers": [
+    {
+      "id": "D1",
+      "name": "Andi",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Sen-08",
+        "Sen-10"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Sari",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Sen-08",
+        "Jum-08"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Budi",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Rab-08",
+        "Jum-10"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Citra",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Kam-10",
+        "Jum-08"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "Dedi",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Rab-10",
+        "Kam-08"
+      ]
+    },
+    {
+      "id": "D6",
+      "name": "Eka",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Sen-08",
+        "Rab-08"
+      ]
+    },
+    {
+      "id": "D7",
+      "name": "Fajar",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Sen-10",
+        "Kam-10"
+      ]
+    },
+    {
+      "id": "D8",
+      "name": "Gita",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Rab-08",
+        "Kam-08"
+      ]
+    },
+    {
+      "id": "D9",
+      "name": "Hadi",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-10",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Kam-10",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Sen-10",
+        "Jum-10"
+      ]
+    },
+    {
+      "id": "D10",
+      "name": "Indah",
+      "max_load": 6,
+      "available_slots": [
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-10",
+        "Jum-08"
+      ],
+      "preferred_slots": [
+        "Rab-08",
+        "Kam-10"
+      ]
+    },
+    {
+      "id": "D11",
+      "name": "Joko",
+      "max_load": 6,
+      "available_slots": [
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Kam-10",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Rab-08",
+        "Kam-10"
+      ]
+    },
+    {
+      "id": "D12",
+      "name": "Kiki",
+      "max_load": 6,
+      "available_slots": [
+        "Sen-08",
+        "Sen-10",
+        "Sel-08",
+        "Sel-10",
+        "Rab-08",
+        "Rab-10",
+        "Kam-08",
+        "Jum-08",
+        "Jum-10"
+      ],
+      "preferred_slots": [
+        "Rab-10",
+        "Kam-08"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "S1",
+      "course": "Basis Data A",
+      "sks": 3,
+      "size": 33,
+      "eligible_lecturers": [
+        "D10",
+        "D2",
+        "D9"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S2",
+      "course": "Algoritma A",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D10",
+        "D4"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S3",
+      "course": "Jaringan Komputer A",
+      "sks": 2,
+      "size": 27,
+      "eligible_lecturers": [
+        "D10",
+        "D9"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S4",
+      "course": "Kecerdasan Buatan A",
+      "sks": 2,
+      "size": 36,
+      "eligible_lecturers": [
+        "D5",
+        "D9"
+      ],
+      "group": "G4"
+    },
+    {
+      "id": "S5",
+      "course": "Pemrograman Web A",
+      "sks": 3,
+      "size": 37,
+      "eligible_lecturers": [
+        "D5",
+        "D8",
+        "D9"
+      ],
+      "group": "G5"
+    },
+    {
+      "id": "S6",
+      "course": "Teori Graf A",
+      "sks": 3,
+      "size": 24,
+      "eligible_lecturers": [
+        "D10",
+        "D12"
+      ],
+      "group": "G6"
+    },
+    {
+      "id": "S7",
+      "course": "Sistem Operasi A",
+      "sks": 3,
+      "size": 26,
+      "eligible_lecturers": [
+        "D10",
+        "D12",
+        "D5"
+      ],
+      "group": "G7"
+    },
+    {
+      "id": "S8",
+      "course": "Struktur Data A",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D1",
+        "D9"
+      ],
+      "group": "G8"
+    },
+    {
+      "id": "S9",
+      "course": "Rekayasa Perangkat Lunak A",
+      "sks": 2,
+      "size": 28,
+      "eligible_lecturers": [
+        "D2",
+        "D4"
+      ],
+      "group": "G9"
+    },
+    {
+      "id": "S10",
+      "course": "Matematika Diskrit A",
+      "sks": 3,
+      "size": 20,
+      "eligible_lecturers": [
+        "D6"
+      ],
+      "group": "G10"
+    },
+    {
+      "id": "S11",
+      "course": "Keamanan Informasi A",
+      "sks": 2,
+      "size": 42,
+      "eligible_lecturers": [
+        "D12"
+      ],
+      "group": "G11"
+    },
+    {
+      "id": "S12",
+      "course": "Pemrograman Mobile A",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D11",
+        "D9"
+      ],
+      "group": "G12"
+    },
+    {
+      "id": "S13",
+      "course": "Basis Data B",
+      "sks": 3,
+      "size": 29,
+      "eligible_lecturers": [
+        "D10",
+        "D5"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S14",
+      "course": "Algoritma B",
+      "sks": 3,
+      "size": 41,
+      "eligible_lecturers": [
+        "D11"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S15",
+      "course": "Jaringan Komputer B",
+      "sks": 3,
+      "size": 33,
+      "eligible_lecturers": [
+        "D10",
+        "D8"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S16",
+      "course": "Kecerdasan Buatan B",
+      "sks": 2,
+      "size": 29,
+      "eligible_lecturers": [
+        "D6",
+        "D8"
+      ],
+      "group": "G4"
+    },
+    {
+      "id": "S17",
+      "course": "Pemrograman Web B",
+      "sks": 3,
+      "size": 68,
+      "eligible_lecturers": [
+        "D7"
+      ],
+      "group": "G5"
+    },
+    {
+      "id": "S18",
+      "course": "Teori Graf B",
+      "sks": 3,
+      "size": 24,
+      "eligible_lecturers": [
+        "D1",
+        "D10"
+      ],
+      "group": "G6"
+    },
+    {
+      "id": "S19",
+      "course": "Sistem Operasi B",
+      "sks": 2,
+      "size": 33,
+      "eligible_lecturers": [
+        "D1"
+      ],
+      "group": "G7"
+    },
+    {
+      "id": "S20",
+      "course": "Struktur Data B",
+      "sks": 2,
+      "size": 65,
+      "eligible_lecturers": [
+        "D4",
+        "D9"
+      ],
+      "group": "G8"
+    },
+    {
+      "id": "S21",
+      "course": "Rekayasa Perangkat Lunak B",
+      "sks": 3,
+      "size": 23,
+      "eligible_lecturers": [
+        "D11",
+        "D7"
+      ],
+      "group": "G9"
+    },
+    {
+      "id": "S22",
+      "course": "Matematika Diskrit B",
+      "sks": 3,
+      "size": 26,
+      "eligible_lecturers": [
+        "D11",
+        "D12"
+      ],
+      "group": "G10"
+    },
+    {
+      "id": "S23",
+      "course": "Keamanan Informasi B",
+      "sks": 2,
+      "size": 20,
+      "eligible_lecturers": [
+        "D7"
+      ],
+      "group": "G11"
+    },
+    {
+      "id": "S24",
+      "course": "Pemrograman Mobile B",
+      "sks": 2,
+      "size": 23,
+      "eligible_lecturers": [
+        "D5"
+      ],
+      "group": "G12"
+    },
+    {
+      "id": "S25",
+      "course": "Basis Data C",
+      "sks": 3,
+      "size": 22,
+      "eligible_lecturers": [
+        "D1"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S26",
+      "course": "Algoritma C",
+      "sks": 2,
+      "size": 39,
+      "eligible_lecturers": [
+        "D2",
+        "D8"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S27",
+      "course": "Jaringan Komputer C",
+      "sks": 2,
+      "size": 24,
+      "eligible_lecturers": [
+        "D12"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S28",
+      "course": "Kecerdasan Buatan C",
+      "sks": 2,
+      "size": 46,
+      "eligible_lecturers": [
+        "D9"
+      ],
+      "group": "G4"
+    },
+    {
+      "id": "S29",
+      "course": "Pemrograman Web C",
+      "sks": 2,
+      "size": 21,
+      "eligible_lecturers": [
+        "D6"
+      ],
+      "group": "G5"
+    },
+    {
+      "id": "S30",
+      "course": "Teori Graf C",
+      "sks": 2,
+      "size": 38,
+      "eligible_lecturers": [
+        "D12",
+        "D7"
+      ],
+      "group": "G6"
+    },
+    {
+      "id": "S31",
+      "course": "Sistem Operasi C",
+      "sks": 2,
+      "size": 28,
+      "eligible_lecturers": [
+        "D6",
+        "D9"
+      ],
+      "group": "G7"
+    },
+    {
+      "id": "S32",
+      "course": "Struktur Data C",
+      "sks": 3,
+      "size": 44,
+      "eligible_lecturers": [
+        "D7",
+        "D8"
+      ],
+      "group": "G8"
+    },
+    {
+      "id": "S33",
+      "course": "Rekayasa Perangkat Lunak C",
+      "sks": 2,
+      "size": 37,
+      "eligible_lecturers": [
+        "D1",
+        "D4",
+        "D8"
+      ],
+      "group": "G9"
+    },
+    {
+      "id": "S34",
+      "course": "Matematika Diskrit C",
+      "sks": 3,
+      "size": 33,
+      "eligible_lecturers": [
+        "D3",
+        "D4"
+      ],
+      "group": "G10"
+    },
+    {
+      "id": "S35",
+      "course": "Keamanan Informasi C",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D10",
+        "D3",
+        "D5"
+      ],
+      "group": "G11"
+    },
+    {
+      "id": "S36",
+      "course": "Pemrograman Mobile C",
+      "sks": 3,
+      "size": 20,
+      "eligible_lecturers": [
+        "D6"
+      ],
+      "group": "G12"
+    },
+    {
+      "id": "S37",
+      "course": "Basis Data D",
+      "sks": 3,
+      "size": 29,
+      "eligible_lecturers": [
+        "D1",
+        "D8"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S38",
+      "course": "Algoritma D",
+      "sks": 3,
+      "size": 60,
+      "eligible_lecturers": [
+        "D1",
+        "D10",
+        "D3"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S39",
+      "course": "Jaringan Komputer D",
+      "sks": 3,
+      "size": 21,
+      "eligible_lecturers": [
+        "D4"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S40",
+      "course": "Kecerdasan Buatan D",
+      "sks": 3,
+      "size": 23,
+      "eligible_lecturers": [
+        "D11",
+        "D12"
+      ],
+      "group": "G4"
+    },
+    {
+      "id": "S41",
+      "course": "Pemrograman Web D",
+      "sks": 3,
+      "size": 28,
+      "eligible_lecturers": [
+        "D3",
+        "D4",
+        "D7"
+      ],
+      "group": "G5"
+    },
+    {
+      "id": "S42",
+      "course": "Teori Graf D",
+      "sks": 2,
+      "size": 22,
+      "eligible_lecturers": [
+        "D1",
+        "D11",
+        "D5"
+      ],
+      "group": "G6"
+    },
+    {
+      "id": "S43",
+      "course": "Sistem Operasi D",
+      "sks": 2,
+      "size": 26,
+      "eligible_lecturers": [
+        "D2",
+        "D7"
+      ],
+      "group": "G7"
+    },
+    {
+      "id": "S44",
+      "course": "Struktur Data D",
+      "sks": 2,
+      "size": 31,
+      "eligible_lecturers": [
+        "D2",
+        "D7"
+      ],
+      "group": "G8"
+    },
+    {
+      "id": "S45",
+      "course": "Rekayasa Perangkat Lunak D",
+      "sks": 3,
+      "size": 25,
+      "eligible_lecturers": [
+        "D11",
+        "D2",
+        "D5"
+      ],
+      "group": "G9"
+    },
+    {
+      "id": "S46",
+      "course": "Matematika Diskrit D",
+      "sks": 2,
+      "size": 28,
+      "eligible_lecturers": [
+        "D6"
+      ],
+      "group": "G10"
+    },
+    {
+      "id": "S47",
+      "course": "Keamanan Informasi D",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D2",
+        "D3"
+      ],
+      "group": "G11"
+    },
+    {
+      "id": "S48",
+      "course": "Pemrograman Mobile D",
+      "sks": 2,
+      "size": 37,
+      "eligible_lecturers": [
+        "D2",
+        "D3",
+        "D9"
+      ],
+      "group": "G12"
+    },
+    {
+      "id": "S49",
+      "course": "Basis Data E",
+      "sks": 3,
+      "size": 23,
+      "eligible_lecturers": [
+        "D3",
+        "D9"
+      ],
+      "group": "G1"
+    },
+    {
+      "id": "S50",
+      "course": "Algoritma E",
+      "sks": 2,
+      "size": 22,
+      "eligible_lecturers": [
+        "D10"
+      ],
+      "group": "G2"
+    },
+    {
+      "id": "S51",
+      "course": "Jaringan Komputer E",
+      "sks": 2,
+      "size": 26,
+      "eligible_lecturers": [
+        "D11",
+        "D5",
+        "D7"
+      ],
+      "group": "G3"
+    },
+    {
+      "id": "S52",
+      "course": "Kecerdasan Buatan E",
+      "sks": 3,
+      "size": 26,
+      "eligible_lecturers": [
+        "D10",
+        "D3"
+      ],
+      "group": "G4"
+    },
+    {
+      "id": "S53",
+      "course": "Pemrograman Web E",
+      "sks": 2,
+      "size": 25,
+      "eligible_lecturers": [
+        "D3"
+      ],
+      "group": "G5"
+    },
+    {
+      "id": "S54",
+      "course": "Teori Graf E",
+      "sks": 2,
+      "size": 22,
+      "eligible_lecturers": [
+        "D10",
+        "D8"
+      ],
+      "group": "G6"
+    },
+    {
+      "id": "S55",
+      "course": "Sistem Operasi E",
+      "sks": 3,
+      "size": 30,
+      "eligible_lecturers": [
+        "D10",
+        "D12",
+        "D3"
+      ],
+      "group": "G7"
+    },
+    {
+      "id": "S56",
+      "course": "Struktur Data E",
+      "sks": 3,
+      "size": 54,
+      "eligible_lecturers": [
+        "D2"
+      ],
+      "group": "G8"
+    },
+    {
+      "id": "S57",
+      "course": "Rekayasa Perangkat Lunak E",
+      "sks": 3,
+      "size": 47,
+      "eligible_lecturers": [
+        "D12"
+      ],
+      "group": "G9"
+    },
+    {
+      "id": "S58",
+      "course": "Matematika Diskrit E",
+      "sks": 2,
+      "size": 35,
+      "eligible_lecturers": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "group": "G10"
+    },
+    {
+      "id": "S59",
+      "course": "Keamanan Informasi E",
+      "sks": 2,
+      "size": 28,
+      "eligible_lecturers": [
+        "D2",
+        "D7"
+      ],
+      "group": "G11"
+    },
+    {
+      "id": "S60",
+      "course": "Pemrograman Mobile E",
+      "sks": 3,
+      "size": 26,
+      "eligible_lecturers": [
+        "D2"
+      ],
+      "group": "G12"
+    }
+  ]
+}

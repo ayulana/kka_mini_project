@@ -1,0 +1,48 @@
+{
+  "slots": [
+    {"id": "Sen-08", "day": "Sen", "start": 8,  "end": 10},
+    {"id": "Sen-10", "day": "Sen", "start": 10, "end": 12},
+    {"id": "Sen-13", "day": "Sen", "start": 13, "end": 15},
+    {"id": "Sel-08", "day": "Sel", "start": 8,  "end": 10},
+    {"id": "Sel-10", "day": "Sel", "start": 10, "end": 12},
+    {"id": "Sel-13", "day": "Sel", "start": 13, "end": 15},
+    {"id": "Sel-16", "day": "Sel", "start": 16, "end": 18},
+    {"id": "Rab-08", "day": "Rab", "start": 8,  "end": 10},
+    {"id": "Rab-10", "day": "Rab", "start": 10, "end": 12},
+    {"id": "Kam-08", "day": "Kam", "start": 8,  "end": 10},
+    {"id": "Kam-10", "day": "Kam", "start": 10, "end": 12}
+  ],
+  "rooms": [
+    {"id": "R1", "name": "Ruang 101", "capacity": 30},
+    {"id": "R2", "name": "Ruang 102", "capacity": 40},
+    {"id": "R3", "name": "Ruang 201", "capacity": 50},
+    {"id": "R4", "name": "Aula", "capacity": 70}
+  ],
+  "lecturers": [
+    {"id": "D1", "name": "Dr. Andi", "max_load": 2,
+     "available_slots": ["Sen-08","Sen-10","Sen-13","Sel-08","Sel-10","Rab-08","Rab-10"],
+     "preferred_slots": ["Sen-08","Sen-10"]},
+    {"id": "D2", "name": "Bu Sari", "max_load": 3,
+     "available_slots": ["Sen-10","Sen-13","Sel-10","Sel-13","Rab-10","Kam-08","Kam-10"],
+     "preferred_slots": ["Sel-10","Sel-13"]},
+    {"id": "D3", "name": "Pak Budi", "max_load": 3,
+     "available_slots": ["Sen-08","Sel-08","Sel-10","Rab-08","Rab-10","Kam-08"],
+     "preferred_slots": ["Sel-08","Rab-08"]},
+    {"id": "D4", "name": "Bu Citra", "max_load": 2,
+     "available_slots": ["Sen-13","Sel-13","Sel-16","Rab-10","Kam-08","Kam-10"],
+     "preferred_slots": ["Kam-08","Kam-10"]},
+    {"id": "D5", "name": "Pak Dedi", "max_load": 3,
+     "available_slots": ["Sen-08","Sen-10","Sel-10","Rab-08","Rab-10","Kam-08","Kam-10"],
+     "preferred_slots": ["Rab-10","Kam-10"]}
+  ],
+  "sections": [
+    {"id": "S1", "course": "Basis Data A",       "sks": 3, "size": 35, "eligible_lecturers": ["D1","D2"], "group": "TI-1A"},
+    {"id": "S2", "course": "Basis Data B",       "sks": 3, "size": 30, "eligible_lecturers": ["D1","D2"], "group": "TI-1B"},
+    {"id": "S3", "course": "Algoritma A",        "sks": 3, "size": 40, "eligible_lecturers": ["D3"],      "group": "TI-1A"},
+    {"id": "S4", "course": "Algoritma B",        "sks": 3, "size": 38, "eligible_lecturers": ["D3","D4"], "group": "TI-1B"},
+    {"id": "S5", "course": "Jaringan Komputer",  "sks": 3, "size": 30, "eligible_lecturers": ["D4","D5"], "group": "TI-1A"},
+    {"id": "S6", "course": "Kecerdasan Buatan",  "sks": 3, "size": 45, "eligible_lecturers": ["D2","D5"], "group": "TI-2A"},
+    {"id": "S7", "course": "Pemrograman Web",    "sks": 3, "size": 28, "eligible_lecturers": ["D5"],      "group": "TI-1B"},
+    {"id": "S8", "course": "Statistika",         "sks": 2, "size": 60, "eligible_lecturers": ["D3","D4"], "group": "TI-2A"}
+  ]
+}
